@@ -118,8 +118,8 @@ for x in ['15', '16', '17']:
             typ['Inns'] = typ['Inns'].astype('int')
             typ['NO'] = typ['NO'].astype('int')
             typ['Runs'] = typ['RunsDescending'].astype('int')
-            typ['Ave'] = typ['Ave'].astype('int')
-            typ['SR'] = typ['SR'].astype('int')
+            typ['Ave'] = typ['Ave'].astype('float')
+            typ['SR'] = typ['SR'].astype('float')
             typ['100s'] = typ['100'].astype('int')
             typ['50s'] = typ['50'].astype('int')
             typ['0s'] = typ['0'].astype('int')
@@ -128,21 +128,36 @@ for x in ['15', '16', '17']:
             typ.drop(['BF','100','50','0','RunsDescending'], axis=1, inplace=True)
         elif y == 'baller_20':
             typ['Inns'] = typ['Inns'].astype('int')
-            typ['Overs'] = typ['Overs'].astype('int')
+            typ['Overs'] = typ['Overs'].astype('float')
             typ['Mdns'] = typ['Mdns'].astype('int')
             typ['Runs'] = typ['Runs'].astype('int')
             typ['Wkts'] = typ['WktsDescending'].astype('int')
-            typ['BBI'] = typ['BBI'].astype('int')
-            typ['Ave'] = typ['Ave'].astype('int')
-            typ['Econ'] = typ['Econ'].astype('int')
-            typ['SR'] = typ['SR'].astype('int')
+            #typ['BBI'] = typ['BBI'].astype('int')
+            typ['Ave'] = typ['Ave'].astype('float')
+            typ['Econ'] = typ['Econ'].astype('float')
+            typ['SR'] = typ['SR'].astype('float')
             typ['4s'] = typ['4'].astype('int')
             typ['5s'] = typ['5'].astype('int')
             typ.drop(['WktsDescending','4','5'], axis=1, inplace=True)
         elif y == 'allrounder_20':
-            
-batsman_20            
-
+            typ['HS'] = typ['HS'].apply(star_remove)
+            typ['Matches'] = typ['MatDescending']
+            typ['Runs'] = typ['Runs'].astype('int')
+            typ['HS'] = typ['HS'].astype('int')
+            typ['Bat Av'] = typ['Bat Av'].astype('float')
+            typ['100s'] = typ['100'].astype('int')
+            typ['Wkts'] = typ['Wkts'].astype('int')
+            #typ['BBI'] = typ['BBI'].astype('int')
+            typ['Bowl Av'] = typ['Bowl Av'].astype('float')
+            typ['5s'] = typ['5'].astype('int')
+            typ['Ave Diff'] = typ['Ave Diff'].astype('float')
+            typ.drop(['MatDescending','100','5'], axis=1, inplace=True)         
+print batsman_2016.head()
+print batsman_2016.dtypes
+print baller_2016.head()
+print baller_2016.dtypes
+print allrounder_2016.head()
+print allrounder_2016.dtypes
 # Remove * and check for data types in final dataframe
 # Merge for last 3 years to obtain training dataset, 
 # test dataset is 2017-18
