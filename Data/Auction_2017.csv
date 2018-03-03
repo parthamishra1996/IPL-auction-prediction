@@ -1,0 +1,206 @@
+Player,Type,Price (?),Team
+Chris Morris*,Bowler,"7,00,00,000",DD
+Kagiso Rabada,Bowler,"5,00,00,000",DD
+Pat Cummins,Bowler,"4,50,00,000",DD
+Mohammed Shami*,Bowler,"4,25,00,000",DD
+Carlos Brathwaite*,Bowler,"4,20,00,000",DD
+Sanju Samson*,Batsman,"4,20,00,000",DD
+Karun Nair*,Batsman,"4,00,00,000",DD
+Zaheer Khan*,Bowler,"4,00,00,000",DD
+Amit Mishra*,Bowler,"3,50,00,000",DD
+Quinton de Kock*,Batsman,"3,50,00,000",DD
+Shreyas Iyer*,Batsman,"2,60,00,000",DD
+JP Duminy*,All Rounder,"2,20,00,000",DD
+Angelo Mathews,All Rounder,"2,00,00,000",DD
+Rishabh Pant*,Wicket Keeper,"1,90,00,000",DD
+Murugan Ashwin,Bowler,"1,00,00,000",DD
+Corey Anderson,All Rounder,"1,00,00,000",DD
+Shahbaz Nadeem*,Bowler,"85,00,000",DD
+Sam Billings*,Batsman,"30,00,000",DD
+Aditya Tare,Wicket Keeper,"25,00,000",DD
+Ankit Bawne,Batsman,"10,00,000",DD
+Jayant Yadav*,Bowler,"10,00,000",DD
+Navdeep Saini,Bowler,"10,00,000",DD
+Chama Milind*,Bowler,"10,00,000",DD
+Shashank Singh,All Rounder,"10,00,000",DD
+Pratyush Singh*,Bowler,"10,00,000",DD
+Khaleel Ahmed*,Bowler,"10,00,000",DD
+Virat Kohli*,Batsman,"12,50,00,000",RCB
+Tymal Mills,Bowler,"12,00,00,000",RCB
+AB de Villiers*,Batsman,"9,50,00,000",RCB
+Shane Watson*,All Rounder,"9,50,00,000",RCB
+Chris Gayle*,All Rounder,"7,50,00,000",RCB
+Kedar Jadhav*,Batsman,"2,17,50,000",RCB
+Stuart Binny*,All Rounder,"2,00,00,000",RCB
+Aniket Choudhary,Bowler,"2,00,00,000",RCB
+Pawan Negi,Bowler,"1,00,00,000",RCB
+Lokesh Rahul*,Wicket Keeper,"1,00,00,000",RCB
+Mandeep Singh*,Batsman,"80,00,000",RCB
+Adam Milne*,Bowler,"70,00,000",RCB
+Travis Head*,Batsman,"50,00,000",RCB
+Samuel Badree*,Bowler,"50,00,000",RCB
+Sarfaraz Khan*,Batsman,"50,00,000",RCB
+Harshal Patel*,Bowler,"40,00,000",RCB
+Billy Stanlake,Bowler,"30,00,000",RCB
+Tabraiz Shamsi*,Bowler,"10,00,000",RCB
+Sachin Baby*,Batsman,"10,00,000",RCB
+Iqbal Abdulla*,Bowler,"10,00,000",RCB
+Sreenath Aravind*,Bowler,"10,00,000",RCB
+Yuzvendra Chahal*,Bowler,"10,00,000",RCB
+Avesh Khan*,Bowler,"10,00,000",RCB
+Praveen Dubey,All Rounder,"10,00,000",RCB
+David Miller*,Batsman,"12,50,00,000",KXIP
+Mohit Sharma*,Bowler,"6,50,00,000",KXIP
+Glenn Maxwell*,All Rounder,"6,00,00,000",KXIP
+Manan Vohra*,Batsman,"4,00,00,000",KXIP
+Murali Vijay*,Batsman,"3,00,00,000",KXIP
+T Natarajan,Bowler,"3,00,00,000",KXIP
+Varun Aaron,Bowler,"2,80,00,000",KXIP
+Shaun Marsh*,Batsman,"2,20,00,000",KXIP
+Wriddhiman Saha*,Wicket Keeper,"2,20,00,000",KXIP
+Eoin Morgan,Batsman,"2,00,00,000",KXIP
+Gurkeerat Singh Mann*,Batsman,"1,30,00,000",KXIP
+Hashim Amla*,Batsman,"1,00,00,000",KXIP
+Sandeep Sharma*,Bowler,"85,00,000",KXIP
+Kishan Cariappa*,Bowler,"80,00,000",KXIP
+Axar Patel*,All Rounder,"75,00,000",KXIP
+Marcus Stoinis*,All Rounder,"55,00,000",KXIP
+Matt Henry,Bowler,"50,00,000",KXIP
+Martin Guptill,Batsman,"50,00,000",KXIP
+Nikhil Naik*,Wicket Keeper,"30,00,000",KXIP
+Darren Sammy,All Rounder,"30,00,000",KXIP
+Rahul Tewatia,All Rounder,"25,00,000",KXIP
+Anureet Singh*,Bowler,"20,00,000",KXIP
+Shardul Thakur*,Bowler,"20,00,000",KXIP
+Swapnil Singh*,Bowler,"10,00,000",KXIP
+Pardeep Sahu*,All Rounder,"10,00,000",KXIP
+Rinku Singh,Batsman,"10,00,000",KXIP
+Armaan Jaffer*,Bowler,"10,00,000",KXIP
+Gautam Gambhir*,Batsman,"12,50,00,000",KKR
+Sunil Narine*,Bowler,"9,50,00,000",KKR
+Trent Boult,Bowler,"5,00,00,000",KKR
+Robin Uthappa*,Wicket Keeper,"5,00,00,000",KKR
+Piyush Chawla*,All Rounder,"4,25,00,000",KKR
+Chris Woakes,All Rounder,"4,20,00,000",KKR
+Nathan Coulter-Nile,Bowler,"3,50,00,000",KKR
+Yusuf Pathan*,All Rounder,"3,25,00,000",KKR
+Shakib Al Hasan*,All Rounder,"2,80,00,000",KKR
+Umesh Yadav*,Bowler,"2,60,00,000",KKR
+Manish Pandey*,Batsman,"1,70,00,000",KKR
+Ankit Rajpoot*,Bowler,"1,50,00,000",KKR
+Chris Lynn*,Batsman,"1,30,00,000",KKR
+Suryakumar Yadav*,Batsman,"70,00,000",KKR
+Andre Russell*,All Rounder,"60,00,000",KKR
+Rishi Dhawan,All Rounder,"55,00,000",KKR
+Darren Bravo,Batsman,"50,00,000",KKR
+Kuldeep Yadav*,Bowler,"40,00,000",KKR
+Rovman Powell,Bowler,"30,00,000",KKR
+Sheldon Jackson*,Wicket Keeper,"15,00,000",KKR
+Ishank Jaggi,Batsman,"10,00,000",KKR
+R Sanjay Yadav,All Rounder,"10,00,000",KKR
+Sayan Ghosh,Bowler,"10,00,000",KKR
+Rohit Sharma*,Batsman,"12,50,00,000",MI
+Kieron Pollard*,All Rounder,"9,50,00,000",MI
+Lasith Malinga*,Bowler,"7,50,00,000",MI
+Harbhajan Singh*,All Rounder,"5,50,00,000",MI
+Ambati Rayudu*,Wicket Keeper,"4,00,00,000",MI
+Jos Buttler*,Wicket Keeper,"3,80,00,000",MI
+Karn Sharma,Bowler,"3,20,00,000",MI
+Vinay Kumar*,Bowler,"2,99,50,000",MI
+Tim Southee*,Bowler,"2,50,00,000",MI
+Mitchell Johnson,Bowler,"2,00,00,000",MI
+Krishnappa Gowtham,All Rounder,"2,00,00,000",MI
+Krunal Pandya*,Batsman,"2,00,00,000",MI
+Parthiv Patel*,Wicket Keeper,"1,40,00,000",MI
+Jasprit Bumrah*,Bowler,"1,20,00,000",MI
+Lendl Simmons*,Batsman,"55,00,000",MI
+Asela Gunaratne,Batsman,"30,00,000",MI
+Mitchell McClenaghan*,Bowler,"30,00,000",MI
+Nicolas Pooran,Wicket Keeper,"30,00,000",MI
+Saurabh Tiwary,Batsman,"30,00,000",MI
+Shreyas Gopal*,All Rounder,"10,00,000",MI
+Hardik Pandya*,All Rounder,"10,00,000",MI
+Nitish Rana*,Batsman,"10,00,000",MI
+Siddhesh Lad*,Batsman,"10,00,000",MI
+Jitesh Sharma*,Wicket Keeper,"10,00,000",MI
+Jagadeesha Suchith*,All Rounder,"10,00,000",MI
+Kulwant Khejroliya,Bowler,"10,00,000",MI
+Deepak Punia*,Bowler,"10,00,000",MI
+Shikhar Dhawan*,Batsman,"12,50,00,000",SRH
+Yuvraj Singh*,All Rounder,"7,00,00,000",SRH
+Ashish Nehra*,Bowler,"5,50,00,000",SRH
+David Warner*,Batsman,"5,50,00,000",SRH
+Bhuvneshwar Kumar*,Bowler,"4,25,00,000",SRH
+Deepak Hooda*,All Rounder,"4,20,00,000",SRH
+Rashid Khan,Bowler,"4,00,00,000",SRH
+Mohammed Siraj,Bowler,"2,60,00,000",SRH
+Mustafizur Rahman*,Bowler,"1,40,00,000",SRH
+Barinder Sran*,Bowler,"1,20,00,000",SRH
+Moises Henriques*,All Rounder,"1,00,00,000",SRH
+Eklavya Dwivedi,Wicket Keeper,"75,00,000",SRH
+Kane Williamson*,Batsman,"60,00,000",SRH
+Chris Jordan,Bowler,"50,00,000",SRH
+Ben Cutting*,Bowler,"50,00,000",SRH
+Naman Ojha*,Wicket Keeper,"50,00,000",SRH
+Vijay Shankar*,All Rounder,"35,00,000",SRH
+Abhimanyu Mithun*,Bowler,"30,00,000",SRH
+Mohammad Nabi,All Rounder,"30,00,000",SRH
+Ben Laughlin,Bowler,"30,00,000",SRH
+Siddarth Kaul*,Bowler,"10,00,000",SRH
+Pravin Tambe,Bowler,"10,00,000",SRH
+Bipul Sharma*,All Rounder,"10,00,000",SRH
+Ricky Bhui*,Batsman,"10,00,000",SRH
+Tanmay Agarwal,Bowler,"10,00,000",SRH
+Ben Stokes,All Rounder,"14,50,00,000",RPS
+MS Dhoni*,Wicket Keeper,"12,50,00,000",RPS
+Ajinkya Rahane*,Batsman,"9,50,00,000",RPS
+Ravichandran Ashwin*,All Rounder,"7,50,00,000",RPS
+Steven Smith*,All Rounder,"5,50,00,000",RPS
+Mitchell Marsh*,All Rounder,"4,80,00,000",RPS
+Faf du Plessis*,All Rounder,"4,00,00,000",RPS
+Mayank Agarwal*,Batsman,"1,60,00,000",RPS
+Daniel Christian,All Rounder,"1,00,00,000",RPS
+Usman Khawaja*,Batsman,"1,00,00,000",RPS
+Rajat Bhatia*,All Rounder,"60,00,000",RPS
+Manoj Tiwary,Batsman,"50,00,000",RPS
+Ashok Dinda*,Bowler,"50,00,000",RPS
+Lockie Ferguson,Bowler,"50,00,000",RPS
+Adam Zampa*,Bowler,"30,00,000",RPS
+Jaydev Unadkat,Bowler,"30,00,000",RPS
+Ishwar Pandey*,Bowler,"20,00,000",RPS
+Rahul Tripathi,Batsman,"10,00,000",RPS
+Baba Aparajith*,Batsman,"10,00,000",RPS
+Deepak Chahar*,Bowler,"10,00,000",RPS
+Ankit Sharma*,All Rounder,"10,00,000",RPS
+Ankush Bains*,Wicket Keeper,"10,00,000",RPS
+Jaskarandeep Buttar*,Bowler,"10,00,000",RPS
+Milind Tandon,All Rounder,"10,00,000",RPS
+Saurabh Kumar,Bowler,"10,00,000",RPS
+Rahul Chahar,Bowler,"10,00,000",RPS
+Suresh Raina*,Batsman,"12,50,00,000",GL
+Ravindra Jadeja*,All Rounder,"9,50,00,000",GL
+James Faulkner*,All Rounder,"7,50,00,000",GL
+Brendon McCullum*,Wicket Keeper,"5,50,00,000",GL
+Dwayne Bravo*,All Rounder,"4,00,00,000",GL
+Praveen Kumar*,All Rounder,"3,50,00,000",GL
+Dinesh Karthik*,Wicket Keeper,"2,30,00,000",GL
+Dwayne Smith*,All Rounder,"2,30,00,000",GL
+Dhawal Kulkarni*,Bowler,"2,00,00,000",GL
+Jason Roy,Batsman,"1,00,00,000",GL
+Aaron Finch*,Batsman,"1,00,00,000",GL
+Basil Thampi,Bowler,"85,00,000",GL
+Manpreet Gony,Bowler,"60,00,000",GL
+Andrew Tye*,Bowler,"50,00,000",GL
+Nathu Singh,Bowler,"50,00,000",GL
+Ishan Kishan*,Wicket Keeper,"35,00,000",GL
+Munaf Patel,Bowler,"30,00,000",GL
+Pradeep Sangwan*,Bowler,"20,00,000",GL
+Shadab Jakati*,Bowler,"20,00,000",GL
+Jaydev Shah*,Batsman,"20,00,000",GL
+Akshdeep Nath,Batsman,"10,00,000",GL
+Chirag Suri,Batsman,"10,00,000",GL
+Shelley Shaurya,Bowler,"10,00,000",GL
+Shubham Agarwal,All Rounder,"10,00,000",GL
+Tejas Baroka,Bowler,"10,00,000",GL
+Pratham Singh,All Rounder,"10,00,000",GL
+Shivil Kaushik*,Bowler,"10,00,000",GL

@@ -1,0 +1,95 @@
+Nat,Player,Team,Base price(in ? lakhs),Winning bid(in ? lakhs)
+Eng !England,"Pietersen, KevinKevin Pietersen",Rising Pune Supergiant,200,300
+WI !Barbados,"Smith, DwayneDwayne Smith",Gujarat Lions,50,230
+Ind !India,"Sharma, IshantIshant Sharma",Rising Pune Supergiant,200,380
+Australia !Australia,"Watson, ShaneShane Watson",Royal Challengers Bangalore,200,950
+Ind !India,"Nehra, AshishAshish Nehra",Sunrisers Hyderabad,200,550
+Ind !India,"Singh, YuvrajYuvraj Singh",Sunrisers Hyderabad,200,700
+South Africa !South Africa,"Steyn, DaleDale Steyn",Gujarat Lions,150,230
+Ind !India,"Samson, SanjuSanju Samson",Delhi Daredevils,200,420
+Eng !England,"Buttler, JosJos Buttler",Mumbai Indians,150,380
+Ind !India,"Karthik, DineshDinesh Karthik",Gujarat Lions,200,230
+Ind !India,"Pathan, IrfanIrfan Pathan",Rising Pune Supergiant,100,100
+South Africa !South Africa,"Morris, ChrisChris Morris",Delhi Daredevils,50,700
+NZ !New Zealand,"Munro, ColinColin Munro",Kolkata Knight Riders,30,30
+Ind !India,"Binny, StuartStuart Binny",Royal Challengers Bangalore,200,200
+Australia !Australia,"Marsh, MitchellMitchell Marsh",Rising Pune Supergiant,200,480
+Ind !India,"Kulkarni, DhawalDhawal Kulkarni",Gujarat Lions,200,230
+Australia !Australia,"Hastings, JohnJohn Hastings",Kolkata Knight Riders,100,130
+Ind !India,"Kumar, PraveenPraveen Kumar",Gujarat Lions,50,350
+NZ !New Zealand,"Southee, TimTim Southee",Mumbai Indians,100,250
+Ind !India,"Sharma, MohitMohit Sharma",Kings XI Punjab,150,650
+WI !Barbados,"Brathwaite, CarlosCarlos Brathwaite",Delhi Daredevils,30,420
+Australia !Australia,"Stoinis, MarcusMarcus Stoinis",Kings XI Punjab,30,55
+BAN !Bangladesh,"Rahman, MustafizurMustafizur Rahman",Sunrisers Hyderabad,50,140
+Ind !India,"Unadkat, JaydevJaydev Unadkat",Kolkata Knight Riders,30,160
+South Africa !South Africa,"Abbott, KyleKyle Abbott",Kings XI Punjab,30,210
+Ind !India,"Sran, BarinderBarinder Sran",Sunrisers Hyderabad,50,120
+Ind !India,"Mithun, AbhimanyuAbhimanyu Mithun",Sunrisers Hyderabad,30,30
+Ind !India,"Singh, R. P.R. P. Singh",Rising Pune Supergiant,30,30
+Australia !Australia,"Head, TravisTravis Head",Royal Challengers Bangalore,30,50
+Ind !India,"Baby, SachinSachin Baby",Royal Challengers Bangalore,10,10
+Ind !India,"Nair, KarunKarun Nair",Delhi Daredevils,10,400
+Ind !India,"Dogra, ParasParas Dogra",Gujarat Lions,10,400
+Ind !India,"Kishan, IshanIshan Kishan",Gujarat Lions,10,35
+Ind !India,"Pant, RishabhRishabh Pant",Delhi Daredevils,10,190
+Ind !India,"Dwivedi, EklavyaEklavya Dwivedi",Gujarat Lions,20,100
+Ind !India,"Tare, AdityaAditya Tare",Sunrisers Hyderabad,20,120
+Ind !India,"Abdulla, IqbalIqbal Abdulla",Royal Challengers Bangalore,10,10
+Ind !India,"Hooda, DeepakDeepak Hooda",Sunrisers Hyderabad,10,420
+Ind !India,"Sharma, AnkitAnkit Sharma",Rising Pune Supergiant,10,10
+Ind !India,"Negi, PawanPawan Negi",Delhi Daredevils,30,850
+Ind !India,"Bhatia, RajatRajat Bhatia",Rising Pune Supergiant,30,60
+Ind !India,"Sangwan, PradeepPradeep Sangwan",Gujarat Lions,20,20
+Ind !India,"Singh, NathuNathu Singh",Mumbai Indians,10,320
+Ind !India,"Pandey, IshwarIshwar Pandey",Rising Pune Supergiant,20,20
+Ind !India,"Rajpoot, AnkitAnkit Rajpoot",Kolkata Knight Riders,10,150
+Ind !India,"Tambe, PravinPravin Tambe",Gujarat Lions,10,20
+Ind !India,"Kaushik, ShivilShivil Kaushik",Gujarat Lions,10,10
+Ind !India,"Ladda, SarabjitSarabjit Ladda",Gujarat Lions,10,10
+Ind !India,"Ashwin, MuruganMurugan Ashwin",Rising Pune Supergiant,10,450
+Ind !India,"Cariappa, KCKC Cariappa",Kings XI Punjab,10,80
+Australia !Australia,"Finch, AaronAaron Finch",Gujarat Lions,100,100
+Eng !England,"Billings, SamSam Billings",Delhi Daredevils,30,30
+Ind !India,"Suman, TirumalasettiTirumalasetti Suman",Sunrisers Hyderabad,10,10
+Ind !India,"Bains, AnkushAnkush Bains",Rising Pune Supergiant,10,10
+Ind !India,"Sharma, UmangUmang Sharma",Gujarat Lions,10,10
+Australia !Australia,"Handscomb, PeterPeter Handscomb",Rising Pune Supergiant,30,30
+Ind !India,"Sharma, JiteshJitesh Sharma",Mumbai Indians,10,10
+Ind !India,"Jaffer, ArmaanArmaan Jaffer",Kings XI Punjab,10,10
+WI !Barbados,"Holder, JasonJason Holder",Kolkata Knight Riders,50,70
+Sri Lanka !Sri Lanka,"Perera, ThisaraThisara Perera",Rising Pune Supergiant,100,100
+Australia !Australia,"Cutting, BenBen Cutting",Sunrisers Hyderabad,50,50
+Australia !Australia,"Tye, AndrewAndrew Tye",Gujarat Lions,30,50
+Ind !India,"Dubey, PraveenPraveen Dubey",Royal Challengers Bangalore,10,35
+Ind !India,"Sathish, RajagopalRajagopal Sathish",Kolkata Knight Riders,20,20
+Ind !India,"Shankar, VijayVijay Shankar",Sunrisers Hyderabad,10,35
+Ind !India,"Jakati, ShadabShadab Jakati",Gujarat Lions,20,20
+Ind !India,"Karnewar, AkshayAkshay Karnewar",Royal Challengers Bangalore,10,10
+Ind !India,"Nath, AkshdeepAkshdeep Nath",Gujarat Lions,10,10
+Ind !India,"Sharma, MananManan Sharma",Kolkata Knight Riders,10,10
+Ind !India,"Aparajith, BabaBaba Aparajith",Rising Pune Supergiant,10,10
+Ind !India,"Chahar, DeepakDeepak Chahar",Rising Pune Supergiant,10,10
+Ind !India,"Kamath, KishoreKishore Kamath",Mumbai Indians,10,140
+Ind !India,"Sahu, PardeepPardeep Sahu",Kings XI Punjab,10,10
+Ind !India,"Pandya, KrunalKrunal Pandya",Mumbai Indians,10,200
+Ind !India,"Punia, DeepakDeepak Punia",Mumbai Indians,10,10
+Ind !India,"Singh, SwapnilSwapnil Singh",Kings XI Punjab,10,10
+Ind !India,"Ahmed, KhaleelKhaleel Ahmed",Delhi Daredevils,10,10
+Ind !India,"Shah, JaydevJaydev Shah",Gujarat Lions,20,20
+Ind !India,"Singh, PratyushPratyush Singh",Delhi Daredevils,10,10
+Ind !India,"Dinda, AshokAshok Dinda",Rising Pune Supergiant,50,50
+Australia !Australia,"Richardson, KaneKane Richardson",Royal Challengers Bangalore,200,200
+WI !Trinidad and Tobago,"Badree, SamuelSamuel Badree",Royal Challengers Bangalore,50,50
+Australia !Australia,"Paris, JoelJoel Paris",Delhi Daredevils,30,30
+Australia !Australia,"Boland, ScottScott Boland",Rising Pune Supergiant,50,50
+Ind !India,"Malik, VikramjeetVikramjeet Malik",Royal Challengers Bangalore,20,20
+Ind !India,"Suyal, PawanPawan Suyal",Delhi Daredevils,10,10
+Australia !Australia,"Zampa, AdamAdam Zampa",Rising Pune Supergiant,30,30
+Ind !India,"Mishra, AmitAmit Mishra",Gujarat Lions,10,10
+Ind !India,"Singh, JaskaranJaskaran Singh",Rising Pune Supergiant,10,10
+Ind !India,"Milind, ChamaChama Milind",Delhi Daredevils,10,10
+Ind !India,"Tokas, VikasVikas Tokas",Royal Challengers Bangalore,10,10
+South Africa !South Africa,"Behardien, FarhaanFarhaan Behardien",Kings XI Punjab,30,30
+Ind !India,"Herwadkar, AkhilAkhil Herwadkar",Delhi Daredevils,10,10
+Ind !India,"Lomror, MahipalMahipal Lomror",Delhi Daredevils,10,10
