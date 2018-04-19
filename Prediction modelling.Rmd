@@ -1,0 +1,277 @@
+---
+title: "IPL_Prediction"
+author: "Abhineet Ishan Kevin Partha"
+date: "4 March 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+IPL2018 Auction Price Prediction
+Three separate models for bowlers, batsman and allrounder players
+
+```{r 1}
+library(MASS)
+library(glmnet)
+setwd("C:/Users/Ishan1/Desktop/IPL_Prediction")
+```
+
+# Reading data
+```{r 2}
+batting2014.df<-read.csv('batsman_2014.csv', header=T)
+batting2015.df<-read.csv('batsman_2015.csv', header=T)
+batting2016.df<-read.csv('batsman_2016.csv', header=T)
+batting2017.df<-read.csv('batsman_2017.csv', header=T)
+
+
+bowling2014.df<-read.csv('baller_2014.csv', header=T)
+bowling2015.df<-read.csv('baller_2015.csv', header=T)
+bowling2016.df<-read.csv('baller_2016.csv', header=T)
+bowling2017.df<-read.csv('baller_2017.csv', header=T)
+
+
+allrounder2014.df<-read.csv('allrounder_2014.csv', header=T)
+allrounder2015.df<-read.csv('allrounder_2015.csv', header=T)
+allrounder2016.df<-read.csv('allrounder_2016.csv', header=T)
+allrounder2017.df<-read.csv('allrounder_2017.csv', header=T)
+
+odi_batting2014.df<-read.csv('odi_batsman_2014.csv', header=T)
+odi_batting2015.df<-read.csv('odi_batsman_2015.csv', header=T)
+odi_batting2016.df<-read.csv('odi_batsman_2016.csv', header=T)
+odi_batting2017.df<-read.csv('odi_batsman_2017.csv', header=T)
+
+
+odi_bowling2014.df<-read.csv('odi_baller_2014.csv', header=T)
+odi_bowling2015.df<-read.csv('odi_baller_2015.csv', header=T)
+odi_bowling2016.df<-read.csv('odi_baller_2016.csv', header=T)
+odi_bowling2017.df<-read.csv('odi_baller_2017.csv', header=T)
+
+
+odi_allrounder2014.df<-read.csv('odi_allrounder_2014.csv', header=T)
+odi_allrounder2015.df<-read.csv('odi_allrounder_2015.csv', header=T)
+odi_allrounder2016.df<-read.csv('odi_allrounder_2016.csv', header=T)
+odi_allrounder2017.df<-read.csv('odi_allrounder_2017.csv', header=T)
+```
+
+# Setting Training data
+```{r 3}
+batting_train<-rbind(batting2014.df,batting2015.df,batting2016.df,odi_batting2014.df,odi_batting2015.df,odi_batting2016.df)
+bowling_train<-rbind(bowling2014.df,bowling2015.df,bowling2016.df,odi_bowling2014.df,odi_bowling2015.df,odi_bowling2016.df)
+allrounder_train<-rbind(allrounder2014.df,allrounder2015.df,allrounder2016.df,odi_allrounder2014.df,odi_allrounder2015.df,odi_allrounder2016.df)
+
+#Remove Na rows
+batting_train<-na.omit(batting_train)
+bowling_train<-na.omit(bowling_train)
+allrounder_train<-na.omit(allrounder_train)
+
+batting_train<- batting_train[ ,-c(1,2,11) ]
+bowling_train<-bowling_train[ ,-c(1,2,8,12) ]
+allrounder_train<-allrounder_train[ ,-c(1,2,7,12) ]
+
+
+```
+
+# Setting Testing data
+```{r 4}
+
+batting_test<-rbind(batting2017.df,odi_batting2017.df)
+bowling_test<-rbind(bowling2017.df,odi_bowling2017.df)
+allrounder_test<-rbind(allrounder2017.df,odi_allrounder2017.df)
+#Remove Na rows
+batting_test<-na.omit(batting_test)
+bowling_test<-na.omit(bowling_test)
+allrounder_test<-na.omit(allrounder_test)
+
+batting_test<- batting_test[ ,-c(1,2,11) ]
+bowling_test<-bowling_test[ ,-c(1,2,8,12) ]
+allrounder_test<-allrounder_test[ ,-c(1,2,7,12) ]
+```
+
+##Model 1: Simple Linear Regression
+```{r 41}
+batting_regress<- lm(Price~.,data=batting_train)
+bowling_regress<- lm(Price~.,data=bowling_train)
+allrounder_regress <- lm(Price~.,data=allrounder_train)
+```
+
+# Regression summary
+```{r 5}
+#Batting
+par(mfrow=c(2,2))
+summary(batting_regress)
+plot(batting_regress)
+```
+```{r 6}
+#Bowling
+summary(bowling_regress)
+plot(bowling_regress)
+```
+```{r 7}
+#Allrounder
+summary(allrounder_regress)
+plot(bowling_regress)
+```
+
+```{r 8}
+#Simple linear regression Prediction
+batting_regress_predict<-predict(batting_regress,batting_test[,-c(9)])
+bowling_regress_predict<-predict(bowling_regress,bowling_test[,-c(9)])
+allrounder_regress_predict<-predict(allrounder_regress,allrounder_test[,-c(9)])
+
+```
+#RMSE
+```{r 9}
+batting_SLR_RMSE<-sqrt(sum((batting_regress_predict- batting_test$Price)^2 ))
+bowling_SLR_RMSE<-sqrt(sum((bowling_regress_predict- bowling_test$Price)^2 ))
+allrounder_SLR_RMSE<-sqrt(sum((allrounder_regress_predict- allrounder_test$Price)^2 ))
+batting_SLR_RMSE
+bowling_SLR_RMSE
+allrounder_SLR_RMSE
+```
+
+##Model 2: Ridge Regression
+```{r 10}
+# X variables
+batting_x<- batting_train[ ,-c(12) ]
+bowling_x<-bowling_train[ ,-c(13) ]
+allrounder_x<-allrounder_train[ ,-c(13)]
+
+set.seed(123)
+batting_ridge<- cv.glmnet (as.matrix(batting_x),batting_train$Price,lambda = 10^seq(4,-1,-0.1),alpha=0 )
+bowling_ridge<- cv.glmnet(as.matrix(bowling_x),bowling_train$Price,lambda = 10^seq(4,-1,-0.1),alpha=0)
+allrounder_ridge <- cv.glmnet(as.matrix(allrounder_x),allrounder_train$Price,lambda = 10^seq(6,-1,-0.1),alpha=0)
+```
+
+# Ridge Lambda selection and fitting
+```{r 11}
+#Batting
+par(mfrow=c(1,1))
+plot(batting_ridge)
+best_batting_lambda<-batting_ridge$lambda.1se
+best_batting_lambda
+batting_ridge_coeff<-batting_ridge$glmnet.fit$beta[batting_ridge$glmnet.fit$lambda==best_batting_lambda]
+batting_ridge_r2 <- batting_ridge$glmnet.fit$dev.ratio[which(batting_ridge$glmnet.fit$lambda == best_batting_lambda)]
+batting_ridge_r2
+```
+```{r 12}
+#Bowling
+plot(bowling_ridge)
+best_bowling_lambda<-bowling_ridge$lambda.1se
+best_bowling_lambda
+bowling_ridge_coeff<-bowling_ridge$glmnet.fit$beta[bowling_ridge$glmnet.fit$lambda==best_bowling_lambda]
+bowling_ridge_r2 <- bowling_ridge$glmnet.fit$dev.ratio[which(bowling_ridge$glmnet.fit$lambda == best_bowling_lambda)]
+bowling_ridge_r2
+```
+```{r 13}
+#Allrounder
+plot(allrounder_ridge)
+best_allrounder_lambda<-allrounder_ridge$lambda.1se
+best_allrounder_lambda
+allrounder_ridge_coeff<-allrounder_ridge$glmnet.fit$beta[allrounder_ridge$glmnet.fit$lambda==best_allrounder_lambda]
+allrounder_ridge_r2 <- allrounder_ridge$glmnet.fit$dev.ratio[which(allrounder_ridge$glmnet.fit$lambda == best_allrounder_lambda)]
+allrounder_ridge_r2
+```
+
+# Prediction for Ridge Regression
+```{r 14}
+batting_ridge_predict<-predict(batting_ridge, as.matrix(batting_x),s=c("lambda.1se"))
+bowling_ridge_predict<-predict(bowling_ridge, as.matrix(bowling_x),s=c("lambda.1se"))
+allrounder_ridge_predict<-predict(allrounder_ridge, as.matrix(allrounder_x),s=c("lambda.1se"))
+```
+
+#Model 3: Lasso regression
+
+```{r 15}
+
+set.seed(123)
+batting_lasso<- cv.glmnet (as.matrix(batting_x),batting_train$Price,lambda = 10^seq(4,-1,-0.1),alpha=1 )
+bowling_lasso<- cv.glmnet(as.matrix(bowling_x),bowling_train$Price,lambda = 10^seq(4,-1,-0.1),alpha=1)
+allrounder_lasso <- cv.glmnet(as.matrix(allrounder_x),allrounder_train$Price,lambda = 10^seq(6,-1,-0.1),alpha=1)
+```
+
+# Lasso Lambda selection and fitting
+```{r 16}
+#Batting
+par(mfrow=c(1,1))
+plot(batting_lasso)
+best_batting_lambda<-batting_lasso$lambda.1se
+best_batting_lambda
+batting_lasso_coeff<-batting_lasso$glmnet.fit$beta[batting_lasso$glmnet.fit$lambda==best_batting_lambda]
+batting_lasso_r2 <- batting_lasso$glmnet.fit$dev.ratio[which(batting_lasso$glmnet.fit$lambda == best_batting_lambda)]
+batting_lasso_r2
+```
+```{r 17}
+#Bowling
+plot(bowling_lasso)
+best_bowling_lambda<-bowling_lasso$lambda.1se
+best_bowling_lambda
+bowling_lasso_coeff<-bowling_lasso$glmnet.fit$beta[bowling_lasso$glmnet.fit$lambda==best_bowling_lambda]
+bowling_lasso_r2 <- bowling_lasso$glmnet.fit$dev.ratio[which(bowling_lasso$glmnet.fit$lambda == best_bowling_lambda)]
+bowling_lasso_r2
+```
+```{r 18}
+#Allrounder
+plot(allrounder_lasso)
+best_allrounder_lambda<-allrounder_lasso$lambda.1se
+best_allrounder_lambda
+allrounder_lasso_coeff<-allrounder_lasso$glmnet.fit$beta[allrounder_lasso$glmnet.fit$lambda==best_allrounder_lambda]
+allrounder_lasso_r2 <- allrounder_lasso$glmnet.fit$dev.ratio[which(allrounder_lasso$glmnet.fit$lambda == best_allrounder_lambda)]
+allrounder_lasso_r2
+```
+
+# Prediction for Lasso Regression
+```{r 19}
+batting_lasso_predict<-predict(batting_lasso, as.matrix(batting_x),s=c("lambda.1se"))
+bowling_lasso_predict<-predict(bowling_lasso, as.matrix(bowling_x),s=c("lambda.1se"))
+allrounder_lasso_predict<-predict(allrounder_lasso, as.matrix(allrounder_x),s=c("lambda.1se"))
+```
+
+
+#R Square computation
+```{r 191}
+rsquare <- function(true, predicted) {
+  sse <- sum((predicted - true)^2)
+  sst <- sum((true - mean(true))^2)
+  rsq <- 1 - sse / sst
+
+  # For this post, impose floor...
+  if (rsq < 0) rsq <- 0
+
+  return (rsq)
+}
+```
+
+# R Square Comparison
+
+```{r 20}
+
+
+batting_regress_r2<-summary(batting_regress)$r.squared
+bowling_regress_r2<-summary(bowling_regress)$r.squared
+allrounder_regress_r2<-summary(allrounder_regress)$r.squared
+batting_regress_r2
+bowling_regress_r2
+allrounder_regress_r2
+
+batting_ridge_r2<-rsquare(batting_train$Price,predict(batting_ridge, as.matrix(batting_x),s=c("lambda.1se")))
+bowling_ridge_r2<-rsquare(bowling_train$Price,predict(bowling_ridge, as.matrix(bowling_x),s=c("lambda.1se")))
+allrounder_ridge_r2<-rsquare(allrounder_train$Price,predict(allrounder_ridge, as.matrix(allrounder_x),s=c("lambda.1se")))
+batting_ridge_r2
+bowling_ridge_r2
+allrounder_ridge_r2
+
+batting_lasso_r2<-rsquare(batting_train$Price,predict(batting_lasso, as.matrix(batting_x),s=c("lambda.1se")))
+bowling_lasso_r2<-rsquare(bowling_train$Price,predict(bowling_lasso, as.matrix(bowling_x),s=c("lambda.1se")))
+allrounder_lasso_r2<-rsquare(allrounder_train$Price,predict(allrounder_lasso, as.matrix(allrounder_x),s=c("lambda.1se")))
+batting_lasso_r2
+bowling_lasso_r2
+allrounder_lasso_r2
+
+
+```
+
+
+
